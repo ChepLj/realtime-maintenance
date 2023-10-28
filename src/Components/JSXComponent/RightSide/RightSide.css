@@ -1,0 +1,73 @@
+.RightSide {
+    width: 50%;
+    height: 100vh;
+    /* background-color: aqua; */
+    position: relative;
+}
+.RightSide .SettingWrap {
+    width: 100%;
+    text-align: end;
+}
+.RightSide .SettingIcon {
+    width: 20px;
+   margin: 10px;
+   cursor: pointer;
+}
+
+.RightSide .SettingArea {
+    border: 1px solid #ccc;
+    width: 90%;
+    height: 90vh;
+    box-shadow: 5px 5px 10px #ccc;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.RightSide .SettingArea .ButtonUploadWrap {
+    width: 100%;
+    text-align: end;
+}
+.RightSide .SettingArea .ButtonUploadWrap .ButtonUpload{
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: rgba(20, 175, 20, 0.623);
+    border: 1px solid rgba(20, 175, 20, 0.623);
+    box-shadow: 1px 1px 4px rgba(20, 175, 20, 0.623);
+}
+
+.RightSide .SettingArea .ButtonUploadWrap .ButtonUpload:active{
+    opacity: 0.5;
+}
+
+.RightSide .SettingArea .ButtonUploadWrap .ButtonCancel{
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(172, 179, 172, 0.884);
+    box-shadow: 1px 1px 4px rgb(188, 199, 188);
+}
+
+.RightSide .SettingArea .ButtonUploadWrap .ButtonCancel:active{
+    opacity: 0.5;
+}
+.RightSide .SettingArea .InputWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding:10px;
+    box-sizing: border-box;
+
+}
+
+.RightSide .SettingArea .InputWrap .Title {
+    font-size: small;
+    font-style: italic;
+}
+
+.RightSide .SettingArea .InputWrap .Input{
+    width: 96%;
+    margin: 5px 0;
+    padding: 5px;
+}
