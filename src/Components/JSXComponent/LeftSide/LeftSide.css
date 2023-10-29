@@ -1,49 +1,68 @@
-
 .LeftSide {
-    width: 50%;
-    min-width: 500px;
-    /* background-color:antiquewhite; */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  min-width: 500px;
+  /* background-color:antiquewhite; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
 .LeftSide .Container {
-    border: 1px dashed #ccc;
-    border-radius: 10px;
-    padding: 5px;
-    margin:20px;
-    display: flex;
-    flex-direction: column;
+  border: 2px dashed #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .LeftSide .Container .Title {
-    font-size: smaller;
-    font-style: italic;
-    color: #333;
+  font-size: smaller;
+  font-style: italic;
+  color: #ffffff;
 }
 
 .LeftSide .Container .ButtonWrap {
-    border: 1px solid rgba(60, 255, 0, 0.678);
-    padding: 10px;
-    margin: 20px 40px;
-    min-width: 300px;
-    text-align: center;
-    box-shadow: 1px 3px 10px 3px #ccc;
-    user-select: none;
-    background-color:rgba(60, 255, 0, 0.479);
-    color:rgba(24, 10, 221, 0.664);
-    font-weight: 600;
-    font-size: large;
-    /* border-radius: 2px; */
-    cursor: pointer;
-
-    
+  border: 1px solid rgb(69, 159, 21);
+  padding: 10px;
+  margin: 20px 40px;
+  min-width: 300px;
+  text-align: center;
+  box-shadow: 1px 3px 10px 3px rgba(70, 118, 45, 0.942);
+  user-select: none;
+  background-color: rgba(71, 249, 17, 0.816);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: large;
+  /* border-radius: 2px; */
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.LeftSide .Container .ButtonWrap:hover{
-    box-shadow: 2px 4px 10px 3px #e0c3c3;
+.LeftSide .Container .ButtonWrap.Disable {
+  cursor: not-allowed;
+  background-color: rgb(235, 235, 228, 0.2) !important;
+  color: #c6c6c6;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 0 0 #c6c6c6 !important;
 }
 
+.LeftSide .Container .ButtonWrap a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.LeftSide .Container .ButtonWrap:hover {
+  box-shadow: 2px 4px 10px 3px #e0c3c3;
+}
+
+.LeftSide .Container .ButtonWrap.Disable a {
+    box-shadow: none;
+    cursor: not-allowed;
+    pointer-events: none;
+    color: rgb(198, 198, 198,0.5);
+  }

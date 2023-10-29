@@ -1,11 +1,10 @@
 import { ref, update } from "firebase/database";
 import { database } from "../api/firebase/firebaseConfig";
+import { ITF_UploadContainer } from "../interface/interface";
 
-interface ITF_UploadContainer {
-  ref:string,
-  data:any
-}
+
 function postDataToDB(uploadContainer:Array<ITF_UploadContainer>, callback: Function) {
+  // console.log("🚀 ~ file: postDataToDB.ts:7 ~ postDataToDB ~ uploadContainer:", uploadContainer)
   const updates: any = {};
   for(const item of uploadContainer){
     updates[item.ref] = item.data

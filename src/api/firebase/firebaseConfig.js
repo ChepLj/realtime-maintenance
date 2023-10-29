@@ -17,7 +17,7 @@ const firebaseConfig = {
   projectId: "realtime-maintenace",
   storageBucket: "realtime-maintenace.appspot.com",
   messagingSenderId: "173117657818",
-  appId: "1:173117657818:web:160e8707896f6c88accbe3"
+  appId: "1:173117657818:web:160e8707896f6c88accbe3",
   databaseURL: 'https://realtime-maintenace-default-rtdb.asia-southeast1.firebasedatabase.app/',
  
  };
