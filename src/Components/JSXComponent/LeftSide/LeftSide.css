@@ -17,6 +17,7 @@
   margin: 20px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .LeftSide .Container .Title {
@@ -33,7 +34,7 @@
   text-align: center;
   box-shadow: 1px 3px 10px 3px rgba(70, 118, 45, 0.942);
   user-select: none;
-  background-color: rgba(71, 249, 17, 0.816);
+  background-color: rgba(71, 249, 17, 0.9);
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: large;
@@ -61,8 +62,18 @@
 }
 
 .LeftSide .Container .ButtonWrap.Disable a {
-    box-shadow: none;
-    cursor: not-allowed;
-    pointer-events: none;
-    color: rgb(198, 198, 198,0.5);
-  }
+  box-shadow: none;
+  cursor: not-allowed;
+  pointer-events: none;
+  color: rgb(198, 198, 198, 0.5);
+}
+
+.LeftSide .Container .ButtonWrap.Unknown {
+  /* cursor: not-allowed; */
+  background-color: rgba(241, 241, 14, 0.863) !important;
+  color: #685151;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 0 0 #c6c6c6 !important;
+}
+
+

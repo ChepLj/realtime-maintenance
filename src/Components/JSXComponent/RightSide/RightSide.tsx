@@ -11,7 +11,7 @@ export function RightSide({ urlData, setRefresh }: { urlData: ITF_UrlData; setRe
   const checkPermitSetting = () => {
     if (!settingDisplay) {
       const keyInput = prompt("Enter the code Id of Admin");
-      if (keyInput == "1285") {
+      if (keyInput === "1285") {
         setSettingDisplay(!settingDisplay);
       } else {
         alert("Wrong code id of Admin");
@@ -79,7 +79,7 @@ export function RightSide({ urlData, setRefresh }: { urlData: ITF_UrlData; setRe
   };
   //TODO_END: check correct Url
   return (
-    <section className="RightSide">
+    <section className="RightSide d-none">
       <div className="SettingWrap" onClick={checkPermitSetting}>
         <img className="SettingIcon" src={setting} alt="" />
       </div>
@@ -106,7 +106,7 @@ function Setting({ urlData, postUrlServerToDB, setSettingDisplay, settingDisplay
       }
     }
   }, []);
-  return (
+  return ( 
     <div className="SettingArea">
       <div className="ButtonUploadWrap">
         <button className="ButtonUpload" onClick={postUrlServerToDB}>
